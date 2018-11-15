@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Team-Work</title>
+<style type="text/css"> </style>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+<div class="pimg1">
+  	<div class="ptext">
+  		<span class = "border">
+			
+            SLEED GH
+
+	  </span>
+						</div>
+					</div>
+
+<section class = "section section-light">
+
+    <h1>Welcome to Sleed GH</h1>
+    <h1>Meet The Team</h1>
+  <P>Exciting Evolution, Quest for Excellence</P>
+
+</section>
+
+<section class="section section-light2">
+
+
+<img id="myImg" class="thumbnail1" title="DANIEL KWADWO NTERFUL" src="images/Daniel.jpg" alt="DANIEL KWADWO NTERFUL " style="width:100%;max-width:260px"/>
+  
+
+<img id="myImg2" class="thumbnail2" title="ABBIW-BEKWIN PRECIOUS ELIJAH" src="images/BallotPic.jpg" alt="ABBIW-BEKWIN PRECIOUS ELIJAH" style="width:100%;max-width:260px"/>
+
+<img id="myImg3" class="thumbnail3" title="DZOTEFE EVANS" src="images/Evans.jpg" alt="DZOTEFE EVANS" style="width:100%;max-width:260px"/>
+
+<img id="myImg4" class="thumbnail1" title="MINTAH LYNETTE" src="images/Lynette.jpg" alt="MINTAH LYNETTE " style="width:100%;max-width:260px"/>
+
+<img id="myImg5" class="thumbnail2" title="STEPHEN SEMANU KUMAH" src="images/Steven.jpg" alt="STEPHEN SEMANU KUMAH " style="width:100%;max-width:260px"/>
+
+
+<div id="zoom1" class="modal">
+    <span class="close">&times;</span>
+    <div id="caption">To go back, click on the image.</div>
+    <img class="modal-content" id="smartphoneZoom-std" />
+</div>
+
+<div id="zoom2" class="modal">
+    <span class="close">&times;</span>
+    <div id="caption">To go back, click on the image.</div>
+    <img class="modal-content" id="tabletZoom-std"/>
+</div>
+
+<div id="zoom3" class="modal">
+    <span class="close">&times;</span>
+    <div id="caption">To go back, click on the image.</div>
+    <img class="modal-content" id="desktopZoom-std"/>
+</div>
+
+<div id="zoom4" class="modal">
+    <span class="close">&times;</span>
+    <div id="caption">To go back, click on the image.</div>
+    <img class="modal-content" id="smartphoneZoom-plus"/>
+</div>
+
+<div id="zoom5" class="modal">
+    <span class="close">&times;</span>
+    <div id="caption">To go back, click on the image.</div>
+    <img class="modal-content" id="tabletZoom-plus"/>
+</div>
+
+
+
+
+<script>
+    
+
+window.onload = function(){ 
+    /* -- STD -- */
+
+    //zoom1
+
+    // Get the modal
+    var modal = document.getElementById('zoom1');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById('smartphoneZoom-std');
+    var captionText = document.getElementById('caption');
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        document.body.style.overflow = "hidden"; //stops the sidebar scrolling
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // Close the modal if the image is clicked
+    var bigImg = document.getElementById("smartphoneZoom-std");
+    bigImg.onclick = function(){
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+
+    //zoom2
+
+    // Get the modal
+    var modal = document.getElementById('zoom2');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg2');
+    var modalImg = document.getElementById('tabletZoom-std');
+    var captionText = document.getElementById('caption');
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        document.body.style.overflow = "hidden"; //stops the sidebar scrolling
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[1];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // Close the modal if the image is clicked
+    var bigImg = document.getElementById("tabletZoom-std");
+    bigImg.onclick = function(){
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+
+    //zoom3
+
+    // Get the modal
+    var modal = document.getElementById('zoom3');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg3');
+    var modalImg = document.getElementById('desktopZoom-std');
+    var captionText = document.getElementById('caption');
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        document.body.style.overflow = "hidden"; //stops the sidebar scrolling
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[2];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // Close the modal if the image is clicked
+    var bigImg = document.getElementById("desktopZoom-std");
+    bigImg.onclick = function(){
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+
+    /* --PLUS-- */
+
+    //zoom4
+
+    // Get the modal
+    var modal = document.getElementById('zoom4');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg4');
+    var modalImg = document.getElementById('smartphoneZoom-plus');
+    var captionText = document.getElementById('caption');
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        document.body.style.overflow = "hidden"; //stops the sidebar scrolling
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[3];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // Close the modal if the image is clicked
+    var bigImg = document.getElementById("smartphoneZoom-plus");
+    bigImg.onclick = function(){
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+
+    //zoom5
+
+    // Get the modal
+    var modal = document.getElementById('zoom5');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg5');
+    var modalImg = document.getElementById('tabletZoom-plus');
+    var captionText = document.getElementById('caption');
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+        document.body.style.overflow = "hidden"; //stops the sidebar scrolling
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[4];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+
+    // Close the modal if the image is clicked
+    var bigImg = document.getElementById("tabletZoom-plus");
+    bigImg.onclick = function(){
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+}
+
+
+
+</script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   
+
+<section class = "section section-light1">
+
+    <h1><a name="s">Contact Us</a></h1>
+    <P> Any time, Anywhere....</P>
+
+<h1 class="aboutheading"><strong>Lets be in touch</strong></h1>
+<p><strong><em>Don't Worry ALL IS WELL</em></strong></p>
+<p><em><strong>Send us a massage </strong></em></p>
+<form name="form1" method="post" action="">
+  <p>
+    <label for="textfield">Name</label>
+    <input type="text" name="textfield" id="textfield">
+  </p>
+  <p>
+    <label for="textfield2">Email</label>
+    <input type="email" name="textfield2" id="textfield2">
+  </p>
+  <p>&nbsp;</p>
+  <p>
+    <label for="textarea">Message</label>
+    <textarea name="textarea" id="textarea">Please type a message</textarea>
+  </p>
+  <p>Are you done?</p>
+  <p>Ok
+    <input type="submit" name="button" id="button" value="Submit">
+  </p>
+  <p>&nbsp;</p>
+</form>
+<p><em><strong></strong></em></p>
+</section>
+
+<section class = "section section-dark">
+
+    <h1>SLEED GH</h1>
+    <P> Exciting Evolution, Quest for Excellence....</P>
+
+</section>
+</body>
+</html>
